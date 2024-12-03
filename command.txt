@@ -1,0 +1,21 @@
+terraform init
+
+aws configure
+
+terraform workspace new dev
+terraform workspace select dev
+
+terraform apply
+
+terraform workspace new stage
+terraform workspace select stage
+
+terraform apply
+
+terraform workspace new prod
+terraform workspace select prod
+
+terraform apply
+
+terraform destroy
+
